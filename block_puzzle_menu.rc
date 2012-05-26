@@ -1,0 +1,18 @@
+#include "menu.h"
+
+BlockPuzzleMenu MENU DISCARDABLE 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Exit",                        MENU_FILE_EXIT
+    END
+    POPUP "Options"
+    BEGIN
+        MENUITEM "Solve",                       MENU_OPTIONS_SOLVE
+    END
+    POPUP "Help"
+    BEGIN
+	MENUITEM "Instructions",		MENU_HELP_INSTRUCTIONS
+	MENUITEM "About",			MENU_HELP_ABOUT
+    END
+END
